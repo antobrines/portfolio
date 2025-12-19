@@ -1,0 +1,52 @@
+{
+    "nav": {
+        "about": "ABOUT",
+        "projects": "PROJECTS",
+        "skills": "SKILLS",
+        "experience": "EXPERIENCE",
+        "contact": "CONTACT"
+    },
+    "hero": {
+        "subtitle": "/// BACKEND ARCHITECT & FULL-STACK",
+        "title_name": "ANTONIN",
+        "title_surname": "BRINES",
+        "description": "I design robust and scalable systems for the modern web.",
+        "cta": "EXPLORE MY PROJECTS",
+        "scroll": "SCROLL DOWN"
+    },
+    "about": {
+        "number": "01.",
+        "title": "/ About Me",
+        "focus_value_1": "'Backend Perf.'",
+        "focus_value_2": "'System Design'",
+        "status_value": "'Available for hire'",
+        "beyond_title": "Beyond the code.",
+        "beyond_p1": "My expertise lies in creating what is unseen: server architecture, database management, and API performance.",
+        "beyond_p2": "I am not just an executor, I am an architect. I love solving complex problems and building solid foundations upon which modern frontend interfaces can rely."
+    },
+    "projects": {
+        "number": "02.",
+        "title": "/ Projects"
+    },
+    "skills": {
+        "number": "03.",
+        "title": "/ Technical Skills",
+        "backend_title": "Backend",
+        "frontend_title": "Frontend",
+        "database_title": "Database",
+        "tools_title": "Tools"
+    },
+    "experience": {
+        "number": "04.",
+        "title": "/ Experience"
+    },
+    "contact": {
+        "title_prefix": "READY TO",
+        "title_highlight": "COLLABORATE",
+        "title_suffix": "?",
+        "desc": "I am always looking for ambitious technical challenges, particularly on complex backend architectures.",
+        "cta": "contact@antonin.dev",
+        "footer": "© 2025 Antonin Brines.",
+        "footer_sub": "Designed & Coded with precision."
+    }
+}

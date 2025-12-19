@@ -1,0 +1,12 @@
+services:
+  portfolio-front:
+    image: portfolio-front
+    build:
+      context: .
+      dockerfile: Dockerfile
+    labels:
+      - traefik.enable=true
+      - traefik.http.routers.portfolio-front.rule=Host(`abrines.fr`)
+      - traefik.http.routers.portfolio-front.entrypoints=websecure
+      - traefik.http.routers.portfolio-front.tls=true
+      - traefik.http.services.portfolio-front.loadbalancer.server.port=80

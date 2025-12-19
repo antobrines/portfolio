@@ -1,0 +1,60 @@
+<div #card class="group relative h-[480px] project-card cursor-pointer">
+    <div class="absolute inset-0 bg-dark border border-glass-border rounded-xl overflow-hidden flex flex-col transition-all duration-500"
+        [ngClass]="borderClass">
+        <div class="h-[55%] w-full relative overflow-hidden">
+            <div class="absolute inset-0 mix-blend-overlay z-10 group-hover:opacity-0 transition-opacity duration-500"
+                [ngClass]="overlayClass">
+            </div>
+            <img [src]="project.imageUrl"
+                class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 grayscale group-hover:grayscale-0"
+                [alt]="project.title" />
+        </div>
+        <div class="p-8 h-[45%] flex flex-col justify-between relative z-20 bg-dark/95 backdrop-blur-sm">
+            <div>
+                <div class="flex justify-between items-center mb-3">
+                    <h3 class="text-2xl font-bold transition-colors" [ngClass]="textClass">
+                        {{ project.title }}
+                    </h3>
+                    <div class="flex gap-3">
+                        @if (project.links?.github) {
+                        <a [href]="project.links?.github" target="_blank" rel="noopener noreferrer"
+                            class="transition-all duration-300 text-xl text-gray-600 hover:scale-110"
+                            [ngClass]="textClass">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        }
+                        @if (project.links?.githubFront) {
+                        <a [href]="project.links?.githubFront" target="_blank" rel="noopener noreferrer"
+                            class="transition-all duration-300 text-xl text-gray-600 flex items-center gap-1 hover:scale-110"
+                            [ngClass]="textClass" title="Frontend">
+                            <i class="fab fa-github"></i><span class="text-xs font-mono">Front</span>
+                        </a>
+                        }
+                        @if (project.links?.githubBack) {
+                        <a [href]="project.links?.githubBack" target="_blank" rel="noopener noreferrer"
+                            class="transition-all duration-300 text-xl text-gray-600 flex items-center gap-1 hover:scale-110"
+                            [ngClass]="textClass" title="Backend">
+                            <i class="fab fa-github"></i><span class="text-xs font-mono">Back</span>
+                        </a>
+                        }
+                        @if (project.links?.demo) {
+                        <a [href]="project.links?.demo" target="_blank" rel="noopener noreferrer"
+                            class="transition-all duration-300 text-xl text-gray-600 hover:scale-110"
+                            [ngClass]="textClass" title="Live Demo">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                        }
+                    </div>
+                </div>
+                <p class="text-gray-500 text-sm leading-relaxed line-clamp-3">
+                    {{ project.description }}
+                </p>
+            </div>
+            <div class="flex flex-wrap gap-3 mt-4 font-mono text-xs" [ngClass]="tagClass">
+                @for (tag of project.tags; track tag) {
+                <span class="border border-white/5 bg-white/5 px-3 py-1 rounded-full">{{ tag }}</span>
+                }
+            </div>
+        </div>
+    </div>
+</div>

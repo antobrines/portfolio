@@ -1,0 +1,58 @@
+<section id="about" class="py-32 relative max-w-6xl mx-auto px-6">
+  <div class="flex items-center gap-4 mb-16">
+    <span class="text-4xl font-mono font-bold text-neon opacity-80">01.</span>
+    <h2 class="text-3xl font-bold text-white">{{ 'about.title' | transloco}}</h2>
+    <div class="h-[1px] bg-gray-800 flex-grow ml-4"></div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-16 items-center">
+    <div class="w-full" data-tilt data-tilt-max="5" data-tilt-glare data-tilt-max-glare="0.2" #tiltCard>
+      <div class="bg-[#0d0d0d] border border-glass-border rounded-xl overflow-hidden shadow-2xl relative">
+        <div class="bg-darker px-4 py-3 flex items-center justify-between border-b border-glass-border">
+          <div class="flex gap-2">
+            <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+          </div>
+          <div class="font-mono text-xs text-gray-600">
+            antonin@server:~
+          </div>
+        </div>
+        <div class="p-8 font-mono text-sm md:text-base leading-loose text-gray-300 relative z-10">
+          <p class="text-gray-600 mb-4">$ cat profile.json</p>
+          <p>
+            <span class="text-purple">const</span>
+            <span class="text-neon"> developer</span> = {{ '{' }}
+          </p>
+          <div class="pl-8 space-y-2 border-l-2 border-gray-800 ml-2 my-4 py-2">
+            <p>name: <span class="text-green">'Antonin Brines'</span>,</p>
+            <p>
+              focus: [<span class="text-green">{{ 'about.focus_value_1' | transloco}}</span>,
+              <span class="text-green">{{ 'about.focus_value_2' | transloco}}</span>],
+            </p>
+            <p>
+              status:
+              <span class="text-green">{{ 'about.status_value' | transloco}}</span>,
+            </p>
+          </div>
+          <p>{{ '}' }};</p>
+          <p class="mt-6 text-neon">
+            $ _<span class="animate-pulse">|</span>
+          </p>
+        </div>
+        <div class="absolute -inset-10 bg-gradient-to-br from-neon/10 to-purple/10 blur-2xl -z-10 pointer-events-none">
+        </div>
+      </div>
+    </div>
+
+    <div class="text-lg text-gray-400 leading-relaxed space-y-6">
+      <h3 class="text-2xl font-bold text-white mb-6">{{ 'about.beyond_title' | transloco}}</h3>
+      <p>
+        {{ 'about.beyond_p1' | transloco}}
+      </p>
+      <p>
+        {{ 'about.beyond_p2' | transloco}}
+      </p>
+    </div>
+  </div>
+</section>

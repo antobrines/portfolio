@@ -1,0 +1,57 @@
+<div id="loader" class="fixed inset-0 z-[100] bg-darker flex flex-col items-center justify-center" *ngIf="isLoading">
+  <div class="text-4xl font-mono font-bold mb-6 tracking-tighter flex items-center gap-2">
+    <i class="fas fa-terminal text-neon"></i> SYSTEM<span class="text-purple">.</span>INIT
+  </div>
+  <div class="w-64 h-1 bg-gray-800 rounded-full overflow-hidden">
+    <div id="loader-bar" class="h-full bg-gradient-to-r from-neon via-purple to-neon w-0"></div>
+  </div>
+</div>
+
+<nav class="fixed w-full z-50 top-0 left-0 border-b border-glass-border backdrop-blur-md bg-dark/80">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="text-xl md:text-2xl font-bold font-mono tracking-tighter">
+      AB<span class="text-purple">.</span>DEV
+    </div>
+    <ul class="hidden md:flex space-x-8 font-mono text-sm">
+      <li>
+        <a href="#about" class="hover:text-neon transition-colors"><span class="text-neon">01.</span> {{ 'nav.about' |
+          transloco}}</a>
+      </li>
+      <li>
+        <a href="#projects" class="hover:text-neon transition-colors"><span class="text-neon">02.</span> {{
+          'nav.projects' | transloco}}</a>
+      </li>
+      <li>
+        <a href="#skills" class="hover:text-neon transition-colors"><span class="text-neon">03.</span> {{ 'nav.skills' |
+          transloco}}</a>
+      </li>
+      <li>
+        <a href="#formation" class="hover:text-neon transition-colors"><span class="text-neon">04.</span> {{
+          'nav.experience' | transloco}}</a>
+      </li>
+    </ul>
+
+    <div class="flex items-center gap-6">
+      <div class="font-mono text-sm font-bold text-gray-400 hidden md:block">
+        <button (click)="switchLang('fr')" class="hover:text-neon transition-colors">FR</button>
+        <span class="mx-2">|</span>
+        <button (click)="switchLang('en')" class="hover:text-neon transition-colors">EN</button>
+      </div>
+
+      <a href="#contact"
+        class="px-6 py-2 border border-neon/30 text-neon hover:bg-neon hover:text-darker transition-all rounded font-mono text-sm font-bold shadow-[0_0_10px_rgba(0,243,255,0.1)]">
+        {{ 'nav.contact' | transloco}}
+      </a>
+    </div>
+
+  </div>
+</nav>
+
+<main id="main-content">
+  <app-hero></app-hero>
+  <app-about></app-about>
+  <app-projects></app-projects>
+  <app-skills></app-skills>
+  <app-experience></app-experience>
+  <app-contact></app-contact>
+</main>

@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* RGB values for Tailwind opacity support */
+    --color-dark: 5 5 5;
+    --color-darker: 2 2 3;
+    --color-neon: 0 243 255;
+    --color-purple: 188 19 254;
+    --color-text-main: 229 231 235; /* gray-200 */
+    
+    /* Pre-defined rgba for specific uses if needed, but prefer tailwind opacity */
+    --color-glass: 255 255 255; 
+    --color-glass-border: 255 255 255;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    background: rgb(var(--color-darker));
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(var(--color-dark));
+    border-radius: 3px;
+    transition: background 0.3s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--color-neon));
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(var(--color-dark)); 
+    color: rgb(var(--color-text-main));
+    overflow-x: hidden;
+    font-family: 'Outfit', sans-serif;
+}
+
+body.loading {
+    overflow: hidden;
+    height: 100vh;
+}
+
+@keyframes animate-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.animate-gradient {
+    animation: animate-gradient 5s ease infinite;
+}
+
+@keyframes pulse-slow {
+    0%, 100% { opacity: 0.05; transform: scale(1); }
+    50% { opacity: 0.1; transform: scale(1.1); }
+}
+.animate-pulse-slow {
+    animation: pulse-slow 10s infinite ease-in-out;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.015);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 2rem 1.5rem;
+    min-height: 180px; 
+    width: 100%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.skill-card:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateY(-8px);
+}
+
+.reveal-element, .reveal-text {
+    opacity: 0;
+    visibility: hidden;
+}

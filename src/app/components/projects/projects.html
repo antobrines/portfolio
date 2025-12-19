@@ -1,0 +1,15 @@
+<section id="projects" class="py-32 bg-darker relative">
+  <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="flex items-center gap-4 mb-16">
+      <span class="text-4xl font-mono font-bold text-neon opacity-80">02.</span>
+      <h2 class="text-3xl font-bold text-white">{{ 'projects.title' | transloco }}</h2>
+      <div class="h-[1px] bg-gray-800 flex-grow ml-4"></div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      @for (project of projects; track project.title) {
+      <app-project-card [project]="project"></app-project-card>
+      }
+    </div>
+  </div>
+</section>

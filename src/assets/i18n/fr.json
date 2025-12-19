@@ -1,0 +1,72 @@
+{
+  "nav": {
+    "about": "À PROPOS",
+    "projects": "PROJETS",
+    "skills": "COMPÉTENCES",
+    "experience": "PARCOURS",
+    "contact": "CONTACT"
+  },
+  "hero": {
+    "subtitle": "/// ARCHITECTE BACKEND & FULL-STACK",
+    "title_name": "ANTONIN",
+    "title_surname": "BRINES",
+    "description": "Je conçois des systèmes robustes et scalables pour le web moderne.",
+    "cta": "EXPLORER MES PROJETS",
+    "scroll": "SCROLL DOWN"
+  },
+  "about": {
+    "number": "01.",
+    "title": "/ À Propos",
+    "focus_value_1": "'Perf. Backend'",
+    "focus_value_2": "'System Design'",
+    "status_value": "'Disponible'",
+    "beyond_title": "Au-delà du code.",
+    "beyond_p1": "Mon expertise réside dans la création de ce qu'on ne voit pas : l'architecture serveur, la gestion des bases de données et la performance des API.",
+    "beyond_p2": "Je ne suis pas juste un exécuteur, je suis un architecte. J'aime résoudre des problèmes complexes et construire des fondations solides sur lesquelles des interfaces frontend modernes peuvent s'appuyer."
+  },
+  "projects": {
+    "number": "02.",
+    "title": "/ Réalisations",
+    "p1_title": "Crypto Engine",
+    "p1_desc": "Moteur de trading haute fréquence avec gestion de websockets en temps réel et file d'attente distribuée.",
+    "p2_title": "Headless Core",
+    "p2_desc": "API e-commerce découplée, optimisée pour la performance et la scalabilité horizontale.",
+    "p3_title": "IoT Data Lake",
+    "p3_desc": "Ingestion et traitement serverless de données capteurs à grande échelle."
+  },
+  "skills": {
+    "number": "03.",
+    "title": "/ Compétences Techniques",
+    "backend_title": "Backend",
+    "frontend_title": "Frontend",
+    "database_title": "Database",
+    "tools_title": "Tools"
+  },
+  "experience": {
+    "number": "04.",
+    "title": "/ Parcours Pro.",
+    "exp1_date": "2023 - Présent",
+    "exp1_title": "Lead Backend Developer",
+    "exp1_company": "TechFlow Solutions, Lyon",
+    "exp1_desc": "Leadership technique sur la refonte de l'architecture d'une plateforme SaaS. Passage d'un monolithe à une architecture micro-services événementielle.",
+    "exp1_item1": "Conception et implémentation de services Node.js",
+    "exp1_item2": "Mise en place de Kafka pour la communication asynchrone",
+    "exp1_item3": "Mentoring d'une équipe de 3 développeurs",
+    "exp2_date": "2021 - 2023",
+    "exp2_title": "Full-Stack Developer",
+    "exp2_company": "Digital Agency, Paris",
+    "exp2_desc": "Développement de solutions web sur mesure pour des clients grands comptes. Spécialisation sur les parties API et intégrations complexes.",
+    "exp2_item1": "Développement d'APIs RESTful avec Django REST Framework",
+    "exp2_item2": "Création de dashboards interactifs avec Vue.js et Nuxt",
+    "exp2_item3": "Optimisation des requêtes PostgreSQL"
+  },
+  "contact": {
+    "title_prefix": "PRÊT À",
+    "title_highlight": "COLLABORER",
+    "title_suffix": "?",
+    "desc": "Je suis toujours à la recherche de défis techniques ambitieux, en particulier sur des architectures backend complexes.",
+    "cta": "contact@antonin.dev",
+    "footer": "© 2025 Antonin Brines.",
+    "footer_sub": "Designed & Coded with precision."
+  }
+}
